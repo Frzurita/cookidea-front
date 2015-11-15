@@ -1,19 +1,9 @@
 
 var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     $rootScope.background = "dark";
-    $scope.ingredients = [];
     $scope.ingredientsChosen = [];
     $scope.meal = "";
 
-    $http.post('http://cookidea.co/backend/web/api/ingredients/',{
-         email: 'cookidea2015@gmail.com',
-         password: '63fb0f53b4'
-    })
-        .success(
-        function(data){
-            $scope.ingredients = [{id:1,name:"caca"}, {id:2,name:"paco"}];
-        }
-    );
 
     $scope.result = function(){
         
@@ -160,6 +150,15 @@ var recipeCtrl = function($scope,$http, $rootScope){
 var appCtrl = function($scope,$http, $rootScope){
     $rootScope.url = 'http://cookidea.co/backend/web/api/';
     $rootScope.background = "dark";
+    $http.post('http://cookidea.co/backend/web/api/ingredients/',{
+        email: 'cookidea2015@gmail.com',
+        password: '63fb0f53b4'
+    })
+        .success(
+        function(data){
+            $rootScope.ingredients = [{id:1,name:"caca"}, {id:2,name:"paco"}];
+        }
+    );
 };
 
 var loginCtrl = function($scope, $http, $location, $window, $rootScope){
