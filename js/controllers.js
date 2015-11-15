@@ -161,7 +161,7 @@ var recipeCtrl = function($scope,$http, $rootScope){
 };
 
 var appCtrl = function($scope,$http, $rootScope){
-    $rootScope.url = 'http://cookidea.co/api/';
+    $rootScope.url = 'http://cookidea.co/backend/web/api/';
     $rootScope.background = "dark";
 };
 
