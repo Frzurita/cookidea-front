@@ -23,7 +23,7 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
 
         .state('home', {
             url: "/home",
-            templateUrl: "views/today.html",
+            templateUrl: "views/cookidea_home.html",
             resolve: {
                 loadPlugin: function ($ocLazyLoad) {
                     return $ocLazyLoad.load([
@@ -38,7 +38,7 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
         })
         .state('login', {
             url: "/login",
-            templateUrl: "views/login.html"
+            templateUrl: "views/cookidea_login.html"
         })
         .state('result', {
             url: "/result",
@@ -46,7 +46,7 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
         })
         .state('register', {
             url: "/register",
-            templateUrl: "views/register.html"
+            templateUrl: "views/cookidea_register.html"
         })
         .state('generic', {
             url: "/post/:postId",

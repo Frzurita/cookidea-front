@@ -1,0 +1,57 @@
+body {
+	background-color: #f57839;
+	font-family: 'Raleway', sans-serif;
+}
+
+.page-container {
+	width: 100%;
+}
+
+.pace,
+.pace-inactive {
+	display: none;
+}
+
+.header {
+	background-color: white;
+	height: 120px;
+}
+
+.main {
+	background-image: url('../views/img/circle_bottom.png');
+	padding-top: 160px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.logo img {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 30px;
+}
+
+.inputs input {
+	width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    line-height: 30px;
+    padding: 0 16px;
+    font-weight: 700;
+}
+
+.buttons button {
+	width: 40%;
+    margin-left: 30%;
+    border: none;
+    background-color: #4f4c4d;
+    color: white;
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
