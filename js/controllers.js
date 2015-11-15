@@ -11,7 +11,7 @@ var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     })
         .success(
         function(data){
-            $scope.ingredients = data.data;
+            $rootScope.ingredients = data.data;
         }
     );
 
