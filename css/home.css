@@ -30,12 +30,9 @@
     color: #f18740;
 }
 
-.register{
-    top: 2m;
-    right: 6em;
-}
-
 .button-home{
+    position: absolute;
+    top:2em;
     background-color: #5d5d5d;
     color: #f18740;
 }
