@@ -1,0 +1,366 @@
+/* PRINCIPAL */
+
+    /* TOPNAVBAR */
+
+/*=================================================
+                GENERAL
+====================================================*/
+/*=================================================
+                TOPNAVBAR
+====================================================*/
+
+.navbar-toggle {
+    background-color: transparent;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+}
+
+
+
+.drop-items-navbar{
+    float:left;
+}
+
+.drop-items-navbar{
+    width: 100%;
+}
+
+
+@media (min-width: 768px){
+    .drop-items-navbar{
+        padding-top: 0;
+        float: left;
+        padding-left: -2em;
+    }
+    .drop-items-navbar{
+        width: auto;
+    }
+}
+/*=====================================================
+                GENERAL
+======================================================*/
+
+h1{
+    margin: 0.4em 0 0 0;
+}
+
+.input{
+    margin: 2em 0;
+}
+
+.orange-color{
+    background-color: #f18740 !important;
+    color: white;
+}
+/*=====================================================
+                FOOTER
+======================================================*/
+
+footer > div > p{
+    padding: 0 15px;
+}
+
+.footer-relative{
+    position: relative;
+}
+
+.footer-absolute{
+    position: absolute;
+}
+
+.footer a:hover {
+    color: #062033;
+}
+
+.footer h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+/*=========================================
+	Header
+==========================================*/
+
+#navigation {
+    border: 0 none;
+    margin: 0;
+
+    -webkit-transition: background-color 800ms linear;
+    -moz-transition: background-color 800ms linear;
+    -ms-transition: background-color 800ms linear;
+    -o-transition: background-color 800ms linear;
+    transition: background-color 800ms linear;
+}
+
+.nav > li > a {
+    color: white;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+}
+
+h1> img {
+    margin-top: 0.4em;
+}
+
+.navbar-toggle i {
+    color: #fff;
+}
+
+.navbar-nav li a {
+    border-top: 1px solid transparent;
+}
+
+.navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+    background-color: transparent;
+    border-top: 1px solid #037E8B;
+    color: #fff;
+}
+
+/*===============================================================================
+
+                                   HOME-HEADER
+
+================================================================================*/
+.hom-header{
+    background-image: url(../img/works/concert4.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    text-align: center;
+    color:whitesmoke;
+
+}
+
+.hom-header h2 {
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.hom-header h2 span {
+    font-weight: 800;
+}
+
+.hom-header h3 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 6px 0 20px;
+}
+
+.hom-header p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.hom-header p:before,
+.hom-header p:after {
+    color: #037E8B;
+    content: "___";
+    top: -8px;
+}
+
+.hom-header p:before {
+    right: 20px;
+}
+
+.hom-header p:after {
+    left: 20px;
+}
+
+.hom-header-text{
+    padding-top: 9em;
+}
+
+.margin-footer{
+    margin-bottom: 3em;
+}
+
+.shadow-style{
+    -webkit-box-shadow: 6px 6px 12px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 12px -8px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 12px -8px rgba(0,0,0,0.75);
+}
+
+.shadow-style-full{
+    -webkit-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+}
+
+.shadow-style-full-in{
+    -webkit-box-shadow: inset 0px 0px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 15px -1px rgba(0,0,0,0.75);
+}
+
+.form-home {
+    width: 50%;
+    display: inline-block;
+    margin-top: 2em;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 18px;
+    font-weight: 200;
+    color: black;
+}
+
+.tosearch {
+    width: 80%;
+    display: inline-block;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 18px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+}
+
+.form-home[placeholder]{
+    color: #000;
+}
+
+.margin-top{
+    margin-top: 2em;
+}
+
+.small-view{
+    display: inline-block;
+}
+.big-view{
+    display: none;
+}
+
+@media(min-width: 768px){
+    .big-view{
+        display: inline-block;
+    }
+    .small-view{
+        display: none;
+    }
+    .hom-header{
+        background-image: url(../img/works/concert4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 200%;
+        background-position: center;
+        text-align: center;
+        color:whitesmoke;
+
+    }
+}
+
+/*===================================================================================
+
+                    REGISTER
+
+====================================================================================*/
+
+.register{
+    margin-top: 10em;
+}
+
+.register-header-button{
+    display: none;
+}
+.register-header-number{
+    display: inherit;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .register-header-button{
+        display: inherit;
+        text-align: center;
+    }
+    .register-header-number{
+        display: none;
+    }
+}
+
+/*===================================================================================
+
+                    LOGIN
+
+====================================================================================*/
+
+.login{
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+.login-bottom{
+    margin-bottom:  4em;
+}
+
+.login-icon{
+    margin-top: 3em;
+}
+
+/*===================================================================================
+
+                    ADDEVENT
+
+====================================================================================*/
+.advice{
+    font-size: 30px;
+    background-color: #03C6E9;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 100px !important;
+    margin-bottom: 400px;
+}
+
+
+/*===================================================================================
+
+                    EVENT TEMPLATE
+
+====================================================================================*/
+
+/***************************************************
+				    Featured
+***************************************************/
+#featured {
+    margin-bottom: 20px;
+}
+#featured a{
+    display: block;
+    width: 940px;
+    height: 400px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 0;
+}
+
+#featuredinfo{
+    width: 700px;
+    background-color: rgba(0,0,0,.8);
+    padding: 5px 10px 10px 10px;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    border-radius: 0 2px 2px 0;
+    -webkit-transition: background-color 0.3s ease-out; /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.3s ease-out; /* Firefox 4+ */
+    -ms-transition: background-color 0.3s ease-out; /* IE10+ */
+    -o-transition: background-color 0.3s ease-out; /* Opera 10.5+ */
+    transition: background-color 0.3s ease-out;
+}
+#featured #featuredinfo:hover{
+    background-color: #00BCF2;
+}
+#featuredinfo h1{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+

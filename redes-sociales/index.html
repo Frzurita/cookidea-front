@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src='test.js'></script>
+    <script src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js" data-pin-build='parsePins'></script>
+    <script src="http://platform.tumblr.com/v1/share.js"></script>
+
+
+
+</head>
+
+<body ng-app='testing'>
+<div>
+    <div facebook class="facebookShare" data-title='{{title}}' data-picture-url='http://i.imgur.com/WACv9Cl.jpg' data-url='{{url}}' data-shares='shares'>{{ shares }}</div>
+    <a facebook-feed-share class="facebookShare" data-url='http://google.com' data-shares='shares', data-description="Example text">{{ shares }}</a>
+    <br /><br />
+    <a twitter data-count='horizontal' data-url='{{url}}' data-via='notsosleepy' data-size="medium" data-text='{{text}}' ></a>
+    <br /><br />
+    <div class="linkedinShare" linkedin data-url='{{url}}' data-title='{{title}}' data-summary="{{text}}" data-shares='linkedinshares'>{{linkedinshares}}</div>
+    <br /><br />
+    <div gplus data-size="tall" data-annotation="bubble" data-href='{{url}}' data-action='share'></div>
+
+    <br/><br/>
+    <div pintrest data-href='{{url}}' data-description='{{title}}' data-img='http://plnkr.co/img/plunker.png'></div>
+    <p>Simple Text Share</p>
+    <div tumblr-text data-url='{{url}}' data-name='Sharing to Tumblr' data-title='test' data-buttontext='Sharing Text' data-styling="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;" data-description='this is awesome'></div>
+    <p>Tumblr Qoute Share</p>
+
+    <div tumblr-qoute data-qoute='Texting Tumblr Qoute share' data-source='http://djds4rce.github.io'></div>
+    <p>Tumblr Image Share</p>
+
+    <div tumblr-image data-source='http://plnkr.co/img/plunker.png' data-caption='Image Share' data-clickthru='http://google.com'></div>
+    <p>Tumblr Video Share</p>
+
+    <div tumblr-video data-embedcode='<iframe width="560" height="315" src="//www.youtube.com/embed/aqHBLS_6gF8" frameborder="0" allowfullscreen></iframe>' data-caption='Angular Video'></div>
+</div>
+</body>
+</html>

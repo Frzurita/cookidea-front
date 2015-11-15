@@ -1,0 +1,22 @@
+<!-- Banner -->
+<section class="animated fadeInDown" ng-controller="postsCtrl">
+    <!-- Main -->
+    <section class="container">
+        <div class="row margin-top-6">
+            <div class="6u 12u(narrower)" ng-repeat="post in posts">
+
+                <section class="shadow-style box special">
+                    <div class="image featured" style="height: 15em; background-color: #E89980;background-position: 50% 50%;background-repeat: no-repeat;background-size: 100%; background-image: url('http://46.101.75.180:8080/images/post/{{post.image}}')">
+                    </div>
+                    <h3>{{post.title}}</h3>
+                    <div class="post-prefacio">
+                        <p>{{post.prefacio}}</p>
+                    </div>
+                    <ul class="actions">
+                        <li><a ui-sref="generic({postId: $index})" class="button alt">{{ 'READMORE' | translate }}</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+</section>

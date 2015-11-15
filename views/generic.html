@@ -1,0 +1,13 @@
+<section id="top" ng-controller="genericCtrl" class="container post fadeInLeftBig">
+	<div ng-include="'views/common/nextpreviousbuttons.html'"></div>
+	<header style="margin-top: 2em">
+		<h2>{{post.title}}</h2>
+		<hr class="style-two"/>
+		<p>{{post.date.split('T')[0]}}</p>
+	</header>
+	<div class="shadow-style box">
+		<div class="image featured" style="height: 15em; background-color: #E89980;background-position: 50% 50%;background-repeat: no-repeat;background-size: 100%; background-image: url('http://46.101.75.180:8080/images/post/{{post.image}}')"></div>
+		<h3 class="text-center"><b><i>{{post.prefacio}}</i></b></h3>
+		<p style="text-align: justify; letter-spacing: 1px; font-size: medium; line-height: 2em"><b>{{post.desarrollo}}</b></p>
+	</div>
+</section>

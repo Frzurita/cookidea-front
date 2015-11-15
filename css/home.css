@@ -1,0 +1,41 @@
+.box{
+    margin-top: 7em;
+}
+
+.img-header{
+    margin: -3em 0 0 0;
+}
+
+.button-ingredients{
+    background-color: #f18740;
+    border:none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    border-color: aliceblue;
+}
+
+.dark{
+    background-color: #5d5d5d;
+    color: #f18740
+}
+
+.light{
+    background-color: #f18740;
+    color: #5d5d5d;
+}
+
+.target{
+    background-color: #5d5d5d;
+    color: #f18740;
+}
+
+.register{
+    top: 2m;
+    right: 6em;
+}
+
+.button-home{
+    background-color: #5d5d5d;
+    color: #f18740;
+}
