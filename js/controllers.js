@@ -6,8 +6,8 @@ var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     $scope.meal = "";
 
     $http.post('http://cookidea.co/backend/web/api/ingredients/',{
-         email: $window.sessionStorage.getItem('userEmail'),
-         password: $window.sessionStorage.getItem('userPassword')
+         email: 'cookidea2015@gmail.com',
+         password: '63fb0f53b4'
     })
         .success(
         function(data){
