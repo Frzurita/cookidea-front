@@ -11,9 +11,6 @@ var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     })
         .success(
         function(data){
-            if(!$window.sessionStorage.getItem('userPassword')){
-                $location.path('/login');
-            }
             $scope.ingredients = data.data;
         }
     );
