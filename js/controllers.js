@@ -1,19 +1,9 @@
 
 var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     $rootScope.background = "dark";
-    $rootScope.ingredients = [{id:1, name:"pepe"},{id:2, name:"carlos"}];
+    $rootScope.ingredients = [{"id":1,"name":"Zanahoria"},{"id":2,"name":"Champiñones"},{"id":3,"name":"Emperador"},{"id":4,"name":"Ajo"},{"id":5,"name":"Perejil"},{"id":6,"name":"Patata"},{"id":7,"name":"Judías verdes"},{"id":8,"name":"Ingredientes ensalada"},{"id":9,"name":"Huevo"},{"id":10,"name":"Atún"},{"id":11,"name":"Pasta"},{"id":12,"name":"Manzana"},{"id":13,"name":"Queso fresco"},{"id":14,"name":"Queso"},{"id":15,"name":"Calabacín"},{"id":16,"name":"Cebolla"},{"id":17,"name":"Espárragos"},{"id":18,"name":"Pollo"},{"id":19,"name":"Pavo"},{"id":20,"name":"Berenjena"},{"id":21,"name":"Pimiento"}];
     $scope.ingredientsChosen = [];
     $scope.meal = "";
-
-    /*$http.post('http://cookidea.co/backend/web/api/ingredients/',{
-         email: 'cookidea2015@gmail.com',
-         password: '63fb0f53b4'
-    })
-        .success(
-        function(data){
-            $rootScope.ingredients = data.data;
-        }
-    );*/
 
     $scope.saveIngredient = function(id){
         $scope.ingredientsChosen.push(id);
