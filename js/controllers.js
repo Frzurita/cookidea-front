@@ -1,11 +1,11 @@
 
 var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     $rootScope.background = "dark";
-    $rootScope.ingredients = [];
+    $rootScope.ingredients = [{id:1, name:"pepe"},{id:2, name:"carlos"}];
     $scope.ingredientsChosen = [];
     $scope.meal = "";
 
-    $http.post('http://cookidea.co/backend/web/api/ingredients/',{
+    /*$http.post('http://cookidea.co/backend/web/api/ingredients/',{
          email: 'cookidea2015@gmail.com',
          password: '63fb0f53b4'
     })
@@ -13,7 +13,7 @@ var homeCtrl = function($scope, $http, $location,$rootScope, $window){
         function(data){
             $rootScope.ingredients = data.data;
         }
-    );
+    );*/
 
     $scope.saveIngredient = function(id){
         $scope.ingredientsChosen.push(id);
