@@ -1,7 +1,7 @@
 
 var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     $rootScope.background = "dark";
-    $rootScope.ingredients = [];
+    $scope.ingredients = [];
     $scope.ingredientsChosen = [];
     $scope.meal = "";
 
@@ -11,7 +11,7 @@ var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     })
         .success(
         function(data){
-            $rootScope.ingredients = [{id:1,name:"caca"}, {id:2,name:"paco"}];
+            $scope.ingredients = [{id:1,name:"caca"}, {id:2,name:"paco"}];
         }
     );
 
