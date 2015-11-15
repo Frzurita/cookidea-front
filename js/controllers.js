@@ -11,8 +11,7 @@ var homeCtrl = function($scope, $http, $location,$rootScope, $window){
     })
         .success(
         function(data){
-            $rootScope.ingredients = data.data;
-            console.log('Pepe');
+            $rootScope.ingredients = [{id:1,name:"caca"}, {id:2,name:"paco"}];
         }
     );
 
