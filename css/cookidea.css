@@ -44,7 +44,7 @@ body {
 }
 
 .buttons button {
-	width: 40%;
+    width: 40%;
     margin-left: 30%;
     border: none;
     background-color: #4f4c4d;
@@ -54,4 +54,36 @@ body {
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
+}
+
+@media(min-width: 600px){
+    .header {
+        height: 60px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .main {
+        padding-top: 180px;
+        background-size: 50%;
+        background-position: center 0;
+        background-repeat: no-repeat;
+    }
+
+    .logo img {
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+        top: 0;
+    }
+
+    .inputs input {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .buttons button {
+        width: 20%;
+        margin-left: 40%;
+    }
 }
